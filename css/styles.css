@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  font-family: Bradley Hand, cursive;
+  font-size: 24px; 
+}
+
+p {margin:0}
+/*  Header */
+#header-nav {
+  background-color: rgb(125, 125, 125);
+  border-radius: 0;
+  border:#000000 solid 3px;
+  height: 100px;
+  position: relative;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 {
+  color: #000000;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 1px 2px 1px #515151;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+  background: #acacac;
+}
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  background-color: #fff;
+  border: 4px #000;
+  font: #000;
+  text-align: center;
+}
+#navbar-collapse > #nav-list > li > a:hover {
+  background: #acacac;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid #000000;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -53px;
+}
+.nav>li>a {
+  display:none;
+}
+/* end Header */
+
+#Menu{
+  font-size:3em;
+  font-weight: bold;
+  background-color: #fff;
+  color:#000000;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+div > .row{
+margin: 15px;
+color: #000000;
+}
+.itm, .cntnt{
+  background-color: #acacac;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 15px;
+}
+
+.itm{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.cntnt {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+/* Medium devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+/* Small devices */
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+
+}
+
+/* Extra small devices */
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { 
+    padding-top: 10px;
+    font-size: 7vw;
+  }
+  .navbar .navbar-nav {
+    margin-top: 40px;
+    height: 100vh;
+  }
+
+ div > .navbar-collapse{
+  border: hidden;
+  max-height: 175px;  
+ }
+
+  #navbar-collapse > #nav-list > li{
+    border: #000 solid 2px;
+  }
+  #navbar-collapse > #nav-list > li > a {
+    color: #000;
+    display:block;
+    font-size: 4vw;
+  }
+
+  /* End Header */
+  #Menu{
+    font-size:5vw;
+  }
+  div > .row{
+    margin: 2%;
+  }
+  .itm{
+    font-size: 3vw;
+  }
+  .cntnt {
+    font-size: 2vw;
+  }
+
+}
